@@ -1,0 +1,211 @@
+
+.gradient-background {
+  background: linear-gradient(300deg, #cf0ce19d, #b01212a6, #0e37cab3);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+/* FIRTS SECTION*/
+.First-section{
+  margin-left: 0px;
+  margin-right: 0px;
+    
+}
+/* nagivation*/
+.NAVIGATION-section li{
+    list-style-type: none;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.NAVIGATION-section {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.NAVIGATION-section a:link , .NAVIGATION-section a:visited{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+.NAVIGATION-section a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+/* heading section*/
+.heading-section img{
+    
+    height: 300px;
+    border-radius: 50%;
+    
+    margin-left: 37% ;
+    
+}
+.heading-section h1{
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    color: white;
+    font-family: 'Chela One', cursive;
+    font-size: 3rem;
+}
+.heading-section h5{
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: rgb(218, 203, 203);
+    margin-top: 0px;
+    padding-top: 0px;
+}
+/* introduction */
+.second-section{
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Education third section*/
+.third-section{
+    display:grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    gap:20px;
+    margin:10%;
+  }
+.third-section div ul{
+    list-style-type: none;
+  }
+.third-section img{
+    border-radius: 50%;
+    border: 5px solid black;
+    
+    margin-bottom: 0px;
+}
+.third-section div{
+  text-align: center;
+}
+.third-section-text-image p{
+  margin-top: 10px;
+  font-weight: bold;
+}
+.third-section .education ul{
+  background-color: rgba(128, 128, 128, 0.185);
+  border-radius: 10%;
+}
+.third-section .education{
+  margin-top: 50px;
+}
+
+/* vertucal line*/
+.vl {
+  border-left: 6px solid black;
+  height: 50px;
+  
+  left: 50%;
+  margin-right: 50%;
+  margin-left: 50%;
+  top: 0;
+}
+
+/* fourth section*/
+.main-fourth-section{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.main-fourth-section div{
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.151);
+  border-radius: 5%;
+  padding: 20px;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.footer div img{
+  height: 150px;
+  border-radius: 50%;
+ margin-top: 50px;
+}
+.footer-col{
+  display: flex;
+  flex-direction: row;
+ 
+}
+.footer li{
+  display: flex;
+  
+}
+
+
+
+
+@media (max-width:768px) {
+  
+  .third-section{
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    gap: 10px;
+  }
+  .third-section img{
+    height: 100px;
+    margin: 0px;
+  }
+  .third-section div ul {
+    margin: 0px;
+  }
+  .vl{
+    height: 0px;
+  }
+  #Narayana-school{
+    order: 2;
+  }
+  #Narula-school{
+    order: -1;
+  }
+  .third-section .education{
+    margin-top: 10px;
+  }
+  .main-fourth-section{
+    flex-direction: column;
+  }
+
+  
+}
+
+/* about us*/
+.about-us{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.about-us img{
+  height: 200px;
+  border-radius: 50%;
+  margin: 50px;
+}
+.about-us p{
+  margin: 10px;
+}
